@@ -3,7 +3,7 @@ export class RandomGeneratorService {
 		return Math.floor(Math.random() * Math.floor(max));
 	}
 
-	static getRandomBool(): boolean {
+	static getRandomBool(): boolean | number {
 		return Math.random() < 0.5;
 	}
 

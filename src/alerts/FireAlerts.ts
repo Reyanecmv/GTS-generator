@@ -10,8 +10,8 @@ export class FireAlert {
 	constructor() {
 		this.temperature = RandomGeneratorService.getRandomInt(100);
 		this.co2Lvl = RandomGeneratorService.getRandomFloat();
-		this.smokeDetectorStatus = RandomGeneratorService.getRandomBool();
-		this.sprinklerStatus = RandomGeneratorService.getRandomBool();
-		this.alarmStatus = RandomGeneratorService.getRandomBool();
+		this.smokeDetectorStatus = RandomGeneratorService.getRandomBool() as boolean;
+		this.sprinklerStatus = RandomGeneratorService.getRandomBool() as boolean;
+		this.alarmStatus = RandomGeneratorService.getRandomBool() as boolean;
 	}
 }
