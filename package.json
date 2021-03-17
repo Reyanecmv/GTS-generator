@@ -1,0 +1,29 @@
+{
+  "name": "gts-generator",
+  "version": "1.0.0",
+  "description": "\"# GTS-generator\"",
+  "main": "index.js",
+  "scripts": {
+    "startFire": "node indexFire.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reyanecmv/GTS-generator.git"
+  },
+  "author": "Vlad Cristea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reyanecmv/GTS-generator/issues"
+  },
+  "homepage": "https://github.com/Reyanecmv/GTS-generator#readme",
+  "dependencies": {
+    "amqp-ts": "^1.8.0",
+    "amqplib": "^0.7.1",
+    "eslint": "^7.22.0",
+    "rxjs": "^6.6.6",
+    "typescript": "^4.2.3"
+  },
+  "devDependencies": {
+    "ts-node": "^9.1.1"
+  }
+}
