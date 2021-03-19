@@ -20,7 +20,7 @@ export class RandomGeneratorService {
 	}
 
 	static getRandomAlertType(): AlertType {
-		return AlertType[Math.floor(Math.random() * this.alertTypeValues.length)];
+		return RandomGeneratorService.alertTypeValues[Math.round(Math.random() * 100 % 2)];
 	}
 }
 

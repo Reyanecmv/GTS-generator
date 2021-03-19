@@ -15,7 +15,7 @@ class Queue {
 	}
 
 	createMessage(item: Object): Amqp.Message{
-		return new Amqp.Message(JSON.stringify(item));
+		return new Amqp.Message(item);
 	}
 
 	sendMessage(message: Message): void {
