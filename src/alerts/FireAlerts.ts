@@ -6,6 +6,7 @@ export class FireAlert {
 	public smokeDetectorStatus: boolean;
 	public sprinklerStatus: boolean;
 	public alarmStatus: boolean;
+	public date: Date;
 
 	constructor() {
 		this.temperature = RandomGeneratorService.getRandomInt(100);
@@ -13,5 +14,6 @@ export class FireAlert {
 		this.smokeDetectorStatus = RandomGeneratorService.getRandomBool() as boolean;
 		this.sprinklerStatus = RandomGeneratorService.getRandomBool() as boolean;
 		this.alarmStatus = RandomGeneratorService.getRandomBool() as boolean;
+		this.date = new Date();
 	}
 }
