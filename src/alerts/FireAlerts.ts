@@ -1,4 +1,4 @@
-import { RandomGeneratorService } from "../services/RandomGeneratorService";
+import { AlertType, RandomGeneratorService } from "../services/RandomGeneratorService";
 
 export class FireAlert {
 	public temperature: number;
@@ -7,6 +7,7 @@ export class FireAlert {
 	public sprinklerStatus: boolean;
 	public alarmStatus: boolean;
 	public date: Date;
+	public alertType: AlertType
 
 	constructor() {
 		this.temperature = RandomGeneratorService.getRandomInt(100);
@@ -15,5 +16,6 @@ export class FireAlert {
 		this.sprinklerStatus = RandomGeneratorService.getRandomBool() as boolean;
 		this.alarmStatus = RandomGeneratorService.getRandomBool() as boolean;
 		this.date = new Date();
+		this.alertType = RandomGeneratorService.getRandomAlertType();
 	}
 }
